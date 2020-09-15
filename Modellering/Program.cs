@@ -15,9 +15,22 @@ namespace Modellering
             int blockDurability = 5;
             int enemyHp = 30;
             int enemyDmg = 5;
+            int playerHp = 100;
+            int playerDmg = 6;
+            
+            Console.WriteLine("enemyHp = " + enemyHp);
+            Console.WriteLine("playerHp = " + playerHp);
+
+            playerHp -= enemyDmg;
+            enemyHp -= playerDmg;
+
+            Console.WriteLine("The player and enemy hit eachother!");
 
 
-            Console.WriteLine("Hello World!");
+
+            Console.WriteLine("Enemy hp = " + enemyHp + " and Player hp = " + playerHp);
+
+            Console.ReadLine();
         }
     }
 }
